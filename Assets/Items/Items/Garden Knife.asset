@@ -1,0 +1,237 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e25e7ff5b3ce840cd941cc265f0dfce0, type: 3}
+  m_Name: Garden Knife
+  m_EditorClassIdentifier: 
+  m_ID:
+    m_SerializedID:
+      m_String: 532d97e6-9e14-4e18-a9a3-08f6bbcb4165
+  m_Parent: {fileID: 11400000, guid: aef950073c88b8c4b9be123a85efcd23, type: 2}
+  m_Prefab: {fileID: 110658, guid: a4cd3d5e9967248a69e6203d2ce67874, type: 3}
+  m_CanDrop:
+    m_IsEnabled: 0
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+  m_Info:
+    m_Name:
+      m_Property:
+        rid: 5930172071841628596
+    m_Description:
+      m_Property:
+        rid: 5930172071841628597
+    m_Sprite:
+      m_Property:
+        rid: 5930172071841628598
+    m_Color:
+      m_Property:
+        rid: 5930172071841628599
+  m_Shape:
+    m_Width: 1
+    m_Height: 1
+    m_Weight: 1
+    m_MaxStack: 1
+  m_Price:
+    m_Currency: {fileID: 11400000, guid: f161451dbe0f54fedbaaa28716337778, type: 2}
+    m_Value: 100
+    m_CanBuyFromMerchant: 0
+    m_CanSellToMerchant: 0
+  m_Properties:
+    m_InheritFromParent: 1
+    m_List: []
+    m_Overrides:
+      m_Keys: []
+      m_Values: []
+  m_Sockets:
+    m_InheritFromParent: 1
+    m_List: []
+    m_PrefabSocket: {fileID: 0}
+  m_Equip:
+    m_IsEquippable: 1
+    m_Prefab: {fileID: 110658, guid: a4cd3d5e9967248a69e6203d2ce67874, type: 3}
+    m_ConditionsEquip:
+      m_Conditions:
+        m_Conditions: []
+    m_InstructionsOnEquip:
+      m_Instructions:
+        m_Instructions:
+        - rid: 5930172071841628600
+        - rid: 5930172071841628602
+        - rid: 5930172071841628604
+    m_InstructionsOnUnequip:
+      m_Instructions:
+        m_Instructions:
+        - rid: 5930172080675357056
+        - rid: 5930172080675357085
+        - rid: 5930172071841628607
+    m_ExecuteFromParent: 0
+  m_Usage:
+    m_CanUse: 0
+    m_ConsumeWhenUse: 1
+    m_ConditionsCanUse:
+      m_Conditions:
+        m_Conditions: []
+    m_InstructionsOnUse:
+      m_Instructions:
+        m_Instructions: []
+    m_ExecuteFromParent: 0
+  m_Crafting:
+    m_Ingredients: []
+    m_CanCraft: 0
+    m_ConditionsCraft:
+      m_Conditions:
+        m_Conditions: []
+    m_InstructionsOnCraft:
+      m_Instructions:
+        m_Instructions: []
+    m_CanDismantle: 0
+    m_ConditionsDismantle:
+      m_Conditions:
+        m_Conditions: []
+    m_InstructionsOnDismantle:
+      m_Instructions:
+        m_Instructions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 5930172071841628596
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: Garden Knife
+    - rid: 5930172071841628597
+      type: {class: GetStringTextArea, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Text:
+          m_Text: A sharp blade for harvesting plants
+    - rid: 5930172071841628598
+      type: {class: GetSpriteInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Sprite: {fileID: 21300000, guid: c919faba7d9254698bcec5730c0997d1, type: 3}
+    - rid: 5930172071841628599
+      type: {class: GetColorColorsWhite, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5930172071841628600
+      type: {class: InstructionCharacterGesture, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Character:
+          m_Property:
+            rid: 5930172071841628601
+        m_AnimationClip: {fileID: 7400000, guid: e8cba42a6f1275742aec8e08f1703298, type: 2}
+        m_AvatarMask: {fileID: 31900000, guid: 9881348987743974c906d721815fa6a5, type: 2}
+        m_BlendMode: 0
+        m_Delay: 0
+        m_Speed: 1
+        m_UseRootMotion: 0
+        m_TransitionIn: 0.1
+        m_TransitionOut: 0.1
+        m_WaitToComplete: 0
+    - rid: 5930172071841628601
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5930172071841628602
+      type: {class: InstructionCommonTimeWait, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Seconds:
+          m_Property:
+            rid: 5930172071841628603
+        m_Mode:
+          m_UpdateTime: 0
+    - rid: 5930172071841628603
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+    - rid: 5930172071841628604
+      type: {class: InstructionCharacterAttachProp, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Character:
+          m_Property:
+            rid: 5930172071841628605
+        m_Type: 0
+        m_Prop:
+          m_Property:
+            rid: 5930172071841628606
+        m_Bone:
+          m_IsExpanded: 1
+          m_Breakpoint: 0
+          m_IsEnabled: 1
+          m_Type: 1
+          m_Human: 18
+          m_Path: 
+        m_Position: {x: -0.01, y: -0.1, z: -0.01}
+        m_Rotation: {x: 25, y: -90, z: -90}
+    - rid: 5930172071841628605
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5930172071841628606
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 110658, guid: a4cd3d5e9967248a69e6203d2ce67874, type: 3}
+    - rid: 5930172071841628607
+      type: {class: InstructionCharacterRemoveProp, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Character:
+          m_Property:
+            rid: 5930172071841628608
+        m_Type: 0
+        m_Prop:
+          m_Property:
+            rid: 5930172071841628609
+    - rid: 5930172071841628608
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5930172071841628609
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 110658, guid: a4cd3d5e9967248a69e6203d2ce67874, type: 3}
+    - rid: 5930172080675357056
+      type: {class: InstructionCharacterGesture, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Character:
+          m_Property:
+            rid: 5930172080675357057
+        m_AnimationClip: {fileID: 7400000, guid: 3d016c83ca3219e44ab7a1b4d49f2409, type: 2}
+        m_AvatarMask: {fileID: 0}
+        m_BlendMode: 0
+        m_Delay: 0
+        m_Speed: 1
+        m_UseRootMotion: 0
+        m_TransitionIn: 0.1
+        m_TransitionOut: 0.1
+        m_WaitToComplete: 0
+    - rid: 5930172080675357057
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5930172080675357085
+      type: {class: InstructionCommonTimeWait, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Seconds:
+          m_Property:
+            rid: 5930172080675357086
+        m_Mode:
+          m_UpdateTime: 0
+    - rid: 5930172080675357086
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 0.85

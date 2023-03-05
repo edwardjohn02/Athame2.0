@@ -1,0 +1,239 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e25e7ff5b3ce840cd941cc265f0dfce0, type: 3}
+  m_Name: Wand
+  m_EditorClassIdentifier: 
+  m_ID:
+    m_SerializedID:
+      m_String: d4fcb898-7f68-42ae-b841-0e8cc204b765
+  m_Parent: {fileID: 11400000, guid: 4b0574a80543f464787ce97b90c97ea0, type: 2}
+  m_Prefab: {fileID: 0}
+  m_CanDrop:
+    m_IsEnabled: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+  m_Info:
+    m_Name:
+      m_Property:
+        rid: 7070522307679092945
+    m_Description:
+      m_Property:
+        rid: 7070522307679092946
+    m_Sprite:
+      m_Property:
+        rid: 7070522307679092947
+    m_Color:
+      m_Property:
+        rid: 7070522307679092948
+  m_Shape:
+    m_Width: 1
+    m_Height: 1
+    m_Weight: 1
+    m_MaxStack: 1
+  m_Price:
+    m_Currency: {fileID: 11400000, guid: f161451dbe0f54fedbaaa28716337778, type: 2}
+    m_Value: 100
+    m_CanBuyFromMerchant: 1
+    m_CanSellToMerchant: 1
+  m_Properties:
+    m_InheritFromParent: 1
+    m_List: []
+    m_Overrides:
+      m_Keys:
+      - m_String: Charge
+      - m_String: MaxCharge
+      m_Values:
+      - m_Override: 1
+        m_Number: 0
+      - m_Override: 1
+        m_Number: 250
+  m_Sockets:
+    m_InheritFromParent: 1
+    m_List: []
+    m_PrefabSocket: {fileID: 0}
+  m_Equip:
+    m_IsEquippable: 1
+    m_Prefab: {fileID: 0}
+    m_ConditionsEquip:
+      m_Conditions:
+        m_Conditions: []
+    m_InstructionsOnEquip:
+      m_Instructions:
+        m_Instructions:
+        - rid: 7070522307679092949
+        - rid: 7070522307679092952
+        - rid: 7070522307679092956
+    m_InstructionsOnUnequip:
+      m_Instructions:
+        m_Instructions:
+        - rid: 7070522307679092959
+        - rid: 7070522307679092962
+    m_ExecuteFromParent: 0
+  m_Usage:
+    m_CanUse: 0
+    m_ConsumeWhenUse: 0
+    m_ConditionsCanUse:
+      m_Conditions:
+        m_Conditions: []
+    m_InstructionsOnUse:
+      m_Instructions:
+        m_Instructions: []
+    m_ExecuteFromParent: 0
+  m_Crafting:
+    m_Ingredients: []
+    m_CanCraft: 0
+    m_ConditionsCraft:
+      m_Conditions:
+        m_Conditions: []
+    m_InstructionsOnCraft:
+      m_Instructions:
+        m_Instructions: []
+    m_CanDismantle: 0
+    m_ConditionsDismantle:
+      m_Conditions:
+        m_Conditions: []
+    m_InstructionsOnDismantle:
+      m_Instructions:
+        m_Instructions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 7070522307679092945
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: Wand
+    - rid: 7070522307679092946
+      type: {class: GetStringTextArea, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Text:
+          m_Text: a magical instrument, perfect for holding mana
+    - rid: 7070522307679092947
+      type: {class: GetSpriteInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Sprite: {fileID: 21300000, guid: 7fb18504d62d947ee8c4d1dded2c501d, type: 3}
+    - rid: 7070522307679092948
+      type: {class: GetColorColorsWhite, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 7070522307679092949
+      type: {class: InstructionStatsChangeStat, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Target:
+          m_Property:
+            rid: 7070522307679092950
+        m_Stat: {fileID: 11400000, guid: cbf0cb2229fd646dd8f831c2fc670538, type: 2}
+        m_Change:
+          m_Operation: 0
+          m_Value:
+            m_Property:
+              rid: 7070522307679092951
+    - rid: 7070522307679092950
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 7070522307679092951
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 5
+    - rid: 7070522307679092952
+      type: {class: InstructionStatsChangeAttribute, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Target:
+          m_Property:
+            rid: 7070522307679092953
+        m_Attribute: {fileID: 11400000, guid: fb2909bae1a6f92419b3a66669329d63, type: 2}
+        m_Change:
+          m_Operation: 0
+          m_Value:
+            m_Property:
+              rid: 7070522307679092954
+    - rid: 7070522307679092953
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 7070522307679092954
+      type: {class: GetDecimalRuntimeItemPropertyValue, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_RuntimeItem:
+          m_Property:
+            rid: 7070522307679092955
+        m_PropertyId:
+          m_String: Charge
+    - rid: 7070522307679092955
+      type: {class: GetRuntimeItemLastEquipped, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+    - rid: 7070522307679092956
+      type: {class: InstructionInventorySetRuntimeItem, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Set:
+          m_Property:
+            rid: 7070522307679092957
+        m_RuntimeItem:
+          m_Property:
+            rid: 7070522307679092958
+    - rid: 7070522307679092957
+      type: {class: SetRuntimeItemGlobalName, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: runtime-item
+          m_Variable: {fileID: 11400000, guid: 419b4bb314b5e2a48be5550fd71d5c24, type: 2}
+          m_Name:
+            m_String: LastTassItem
+            m_ID: 1054069637
+    - rid: 7070522307679092958
+      type: {class: GetRuntimeItemLastEquipped, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+    - rid: 7070522307679092959
+      type: {class: InstructionStatsChangeStat, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Target:
+          m_Property:
+            rid: 7070522307679092960
+        m_Stat: {fileID: 11400000, guid: cbf0cb2229fd646dd8f831c2fc670538, type: 2}
+        m_Change:
+          m_Operation: 0
+          m_Value:
+            m_Property:
+              rid: 7070522307679092961
+    - rid: 7070522307679092960
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 7070522307679092961
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+    - rid: 7070522307679092962
+      type: {class: InstructionStatsChangeAttribute, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Target:
+          m_Property:
+            rid: 7070522307679092963
+        m_Attribute: {fileID: 11400000, guid: fb2909bae1a6f92419b3a66669329d63, type: 2}
+        m_Change:
+          m_Operation: 0
+          m_Value:
+            m_Property:
+              rid: 7070522307679092964
+    - rid: 7070522307679092963
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 7070522307679092964
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 0
