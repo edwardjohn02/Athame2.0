@@ -210,7 +210,7 @@ MonoBehaviour:
           m_Property:
             rid: 5930172080675357057
         m_AnimationClip: {fileID: 7400000, guid: 3d016c83ca3219e44ab7a1b4d49f2409, type: 2}
-        m_AvatarMask: {fileID: 0}
+        m_AvatarMask: {fileID: 31900000, guid: 9881348987743974c906d721815fa6a5, type: 2}
         m_BlendMode: 0
         m_Delay: 0
         m_Speed: 1
