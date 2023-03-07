@@ -27,6 +27,7 @@ MonoBehaviour:
     - rid: 5930172027186446904
     - rid: 5930172027186446907
     - rid: 5930172069496225927
+    - rid: 5930172124141977684
   references:
     version: 2
     RefIds:
@@ -115,6 +116,23 @@ MonoBehaviour:
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Value: {fileID: 0}
+    - rid: 5930172124141977684
+      type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value:
+          rid: 5930172124141977686
+        m_Name:
+          m_String: SpellDurations
+    - rid: 5930172124141977686
+      type: {class: ValueNumber, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value: 0
     - rid: 7070522291392873215
       type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
       data:
