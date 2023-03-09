@@ -1,0 +1,278 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e25e7ff5b3ce840cd941cc265f0dfce0, type: 3}
+  m_Name: ConjureLight
+  m_EditorClassIdentifier: 
+  m_ID:
+    m_SerializedID:
+      m_String: 294071d7-dd0e-4097-b625-51ae4f80c774
+  m_Parent: {fileID: 11400000, guid: c103be3ee74a3ff49aa8beca2a0d270c, type: 2}
+  m_Prefab: {fileID: 0}
+  m_CanDrop:
+    m_IsEnabled: 0
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+  m_Info:
+    m_Name:
+      m_Property:
+        rid: 5930172189515972612
+    m_Description:
+      m_Property:
+        rid: 5930172189515972613
+    m_Sprite:
+      m_Property:
+        rid: 5930172189515972614
+    m_Color:
+      m_Property:
+        rid: 5930172189515972615
+  m_Shape:
+    m_Width: 1
+    m_Height: 1
+    m_Weight: 0
+    m_MaxStack: 1
+  m_Price:
+    m_Currency: {fileID: 11400000, guid: f161451dbe0f54fedbaaa28716337778, type: 2}
+    m_Value: 100
+    m_CanBuyFromMerchant: 0
+    m_CanSellToMerchant: 0
+  m_Properties:
+    m_InheritFromParent: 1
+    m_List: []
+    m_Overrides:
+      m_Keys:
+      - m_String: ManaCost
+      - m_String: Duration
+      m_Values:
+      - m_Override: 1
+        m_Number: 2
+      - m_Override: 1
+        m_Number: 30
+  m_Sockets:
+    m_InheritFromParent: 1
+    m_List: []
+    m_PrefabSocket: {fileID: 0}
+  m_Equip:
+    m_IsEquippable: 1
+    m_Prefab: {fileID: 0}
+    m_ConditionsEquip:
+      m_Conditions:
+        m_Conditions: []
+    m_InstructionsOnEquip:
+      m_Instructions:
+        m_Instructions:
+        - rid: 5930172189515972628
+    m_InstructionsOnUnequip:
+      m_Instructions:
+        m_Instructions: []
+    m_ExecuteFromParent: 1
+  m_Usage:
+    m_CanUse: 1
+    m_ConsumeWhenUse: 0
+    m_ConditionsCanUse:
+      m_Conditions:
+        m_Conditions: []
+    m_InstructionsOnUse:
+      m_Instructions:
+        m_Instructions:
+        - rid: 5930172189515972616
+        - rid: 5930172189515972637
+        - rid: 5930172189515972625
+        - rid: 5930172189515972633
+    m_ExecuteFromParent: 0
+  m_Crafting:
+    m_Ingredients: []
+    m_CanCraft: 0
+    m_ConditionsCraft:
+      m_Conditions:
+        m_Conditions: []
+    m_InstructionsOnCraft:
+      m_Instructions:
+        m_Instructions: []
+    m_CanDismantle: 0
+    m_ConditionsDismantle:
+      m_Conditions:
+        m_Conditions: []
+    m_InstructionsOnDismantle:
+      m_Instructions:
+        m_Instructions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 5930172189515972612
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: Conjure Light
+    - rid: 5930172189515972613
+      type: {class: GetStringTextArea, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Text:
+          m_Text: You conjure a small light to help you see in dark times.
+    - rid: 5930172189515972614
+      type: {class: GetSpriteInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Sprite: {fileID: 21300000, guid: 4408269a96438e84796304f4ac0ed623, type: 3}
+    - rid: 5930172189515972615
+      type: {class: GetColorColorsWhite, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5930172189515972616
+      type: {class: InstructionGameObjectInstantiate, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_GameObject:
+          m_Property:
+            rid: 5930172189515972617
+          usePooling: 0
+          size: 5
+          hasDuration: 0
+          duration: 10
+        m_Location:
+          m_Property:
+            rid: 5930172189515973412
+        m_Parent:
+          m_Property:
+            rid: 5930172189515973414
+        m_Save:
+          m_Property:
+            rid: 5930172189515972620
+    - rid: 5930172189515972617
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 1590415177872986601, guid: d99a1530a65d94f4ea0b1367a6170ecd, type: 3}
+    - rid: 5930172189515972620
+      type: {class: SetGameObjectNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5930172189515972625
+      type: {class: InstructionCommonTimeWait, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Seconds:
+          m_Property:
+            rid: 5930172189515972627
+        m_Mode:
+          m_UpdateTime: 0
+    - rid: 5930172189515972627
+      type: {class: GetDecimalGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: number
+          m_Variable: {fileID: 11400000, guid: 419b4bb314b5e2a48be5550fd71d5c24, type: 2}
+          m_Name:
+            m_String: SpellDurations
+            m_ID: -170535894
+    - rid: 5930172189515972628
+      type: {class: InstructionArithmeticSetNumber, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Set:
+          m_Property:
+            rid: 5930172189515972629
+        m_From:
+          m_Property:
+            rid: 5930172189515972630
+    - rid: 5930172189515972629
+      type: {class: SetNumberGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: number
+          m_Variable: {fileID: 11400000, guid: 419b4bb314b5e2a48be5550fd71d5c24, type: 2}
+          m_Name:
+            m_String: SpellDurations
+            m_ID: -170535894
+    - rid: 5930172189515972630
+      type: {class: GetDecimalItemPropertyValue, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Bag:
+          m_Property:
+            rid: 5930172189515972631
+        m_Item:
+          m_Property:
+            rid: 5930172189515972632
+        m_PropertyId:
+          m_String: Duration
+    - rid: 5930172189515972631
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5930172189515972632
+      type: {class: GetItemInstance, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Item: {fileID: 11400000, guid: ed7ccab313cb3d64381a5720f9717d6e, type: 2}
+    - rid: 5930172189515972633
+      type: {class: InstructionGameObjectDestroy, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_GameObject:
+          m_Property:
+            rid: 5930172189515972635
+    - rid: 5930172189515972635
+      type: {class: GetGameObjectCharactersPlayerPath, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data:
+        m_Path:
+          m_Property:
+            rid: 5930172189515972636
+    - rid: 5930172189515972636
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: LightLocation/ConjureLight(Clone)
+    - rid: 5930172189515972637
+      type: {class: InstructionBooleanSetBool, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Set:
+          m_Property:
+            rid: 5930172189515972640
+        m_From:
+          m_Property:
+            rid: 5930172189515972639
+    - rid: 5930172189515972639
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 0
+    - rid: 5930172189515972640
+      type: {class: SetBoolGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: boolean
+          m_Variable: {fileID: 11400000, guid: 419b4bb314b5e2a48be5550fd71d5c24, type: 2}
+          m_Name:
+            m_String: Casting
+            m_ID: 514229196
+    - rid: 5930172189515973412
+      type: {class: GetLocationCharacterLocalOffset, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data:
+        m_Character:
+          m_Property:
+            rid: 5930172189515973413
+        m_Rotate: 1
+        m_LocalOffset: {x: 0.5, y: 1, z: 0}
+    - rid: 5930172189515973413
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5930172189515973414
+      type: {class: GetGameObjectCharactersPlayerPath, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data:
+        m_Path:
+          m_Property:
+            rid: 5930172189515973415
+    - rid: 5930172189515973415
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: LightLocation

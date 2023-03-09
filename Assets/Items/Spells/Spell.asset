@@ -208,4 +208,4 @@ MonoBehaviour:
     - rid: 5930172124141977694
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Value: 
+        m_Value: Duration
