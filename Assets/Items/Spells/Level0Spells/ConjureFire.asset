@@ -270,7 +270,7 @@ MonoBehaviour:
     - rid: 5930172027186447121
       type: {class: InstructionGameObjectInstantiate, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data:
-        m_IsExpanded: 0
+        m_IsExpanded: 1
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_GameObject:
@@ -282,7 +282,7 @@ MonoBehaviour:
           duration: 10
         m_Location:
           m_Property:
-            rid: 5930172027186447123
+            rid: 5930172217977995393
         m_Parent:
           m_Property:
             rid: 5930172027186447124
@@ -293,27 +293,10 @@ MonoBehaviour:
       type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_GameObject: {fileID: 3441366997005404593, guid: 79bde1989c1e5c840bc7b0d75d49fced, type: 3}
-    - rid: 5930172027186447123
-      type: {class: GetLocationGameObject, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data:
-        m_GameObject:
-          m_Property:
-            rid: 5930172027186447127
-        m_Rotate: 1
     - rid: 5930172027186447124
       type: {class: GetGameObjectNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
     - rid: 5930172027186447125
       type: {class: SetGameObjectNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-    - rid: 5930172027186447127
-      type: {class: GetGameObjectByName, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data:
-        m_Name:
-          m_Property:
-            rid: 5930172027186447128
-    - rid: 5930172027186447128
-      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data:
-        m_Value: SingleHandCastLocation
     - rid: 5930172027186447132
       type: {class: InstructionCommonTimeWait, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data:
@@ -392,3 +375,20 @@ MonoBehaviour:
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: CFXR4 Small Sun(Clone)
+    - rid: 5930172217977995393
+      type: {class: GetLocationGameObject, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject:
+          m_Property:
+            rid: 5930172217977995395
+        m_Rotate: 1
+    - rid: 5930172217977995395
+      type: {class: GetGameObjectByName, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Name:
+          m_Property:
+            rid: 5930172217977995396
+    - rid: 5930172217977995396
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: SingleHandCastLocation

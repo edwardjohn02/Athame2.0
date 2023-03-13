@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Swim
   - Water
+  - FxTemporaire
+  - DaggerSheathed
   layers:
   - Default
   - TransparentFX

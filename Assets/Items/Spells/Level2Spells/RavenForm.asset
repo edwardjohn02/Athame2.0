@@ -70,6 +70,7 @@ MonoBehaviour:
     m_InstructionsOnEquip:
       m_Instructions:
         m_Instructions:
+        - rid: 5930172232133509297
         - rid: 5930172124141977687
     m_InstructionsOnUnequip:
       m_Instructions:
@@ -99,6 +100,7 @@ MonoBehaviour:
         - rid: 5930172124141977833
         - rid: 5930172123961885438
         - rid: 5930172117991293916
+        - rid: 5930172232133509226
     m_ExecuteFromParent: 0
   m_Crafting:
     m_Ingredients: []
@@ -573,4 +575,67 @@ MonoBehaviour:
     - rid: 5930172168099857001
       type: {class: GetDecimalInteger, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
+        m_Value: 10
+    - rid: 5930172232133509226
+      type: {class: InstructionBooleanSetBool, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Set:
+          m_Property:
+            rid: 5930172232133509227
+        m_From:
+          m_Property:
+            rid: 5930172232133509228
+    - rid: 5930172232133509227
+      type: {class: SetBoolGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: boolean
+          m_Variable: {fileID: 11400000, guid: 419b4bb314b5e2a48be5550fd71d5c24, type: 2}
+          m_Name:
+            m_String: ActiveDuration
+            m_ID: 1162463021
+    - rid: 5930172232133509228
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
         m_Value: 1
+    - rid: 5930172232133509297
+      type: {class: InstructionLogicCheckConditions, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Conditions:
+          m_Conditions:
+          - rid: 5930172232133509298
+    - rid: 5930172232133509298
+      type: {class: ConditionMathCompareBooleans, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Sign: 1
+        m_Value:
+          m_Property:
+            rid: 5930172232133509299
+        m_Comparison: 0
+        m_CompareTo:
+          m_Property:
+            rid: 5930172232133509300
+    - rid: 5930172232133509299
+      type: {class: GetBoolGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: boolean
+          m_Variable: {fileID: 11400000, guid: 419b4bb314b5e2a48be5550fd71d5c24, type: 2}
+          m_Name:
+            m_String: ActiveDuration
+            m_ID: 1162463021
+    - rid: 5930172232133509300
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 0

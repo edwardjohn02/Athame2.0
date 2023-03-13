@@ -357,7 +357,7 @@ Material:
     - _SecondarySpecular: 1
     - _SecondarySpecularShift: 0.9
     - _ShadowStrength: 1
-    - _Smoothness: 0.5
+    - _Smoothness: 0
     - _SmoothnessMax: 0.7
     - _SmoothnessMin: 0.3
     - _SmoothnessRemapMax: 0.5
@@ -415,10 +415,10 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - _BASE_COLOR: {r: 1, g: 1, b: 1, a: 1}
-    - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 0}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _COAT_COLOR: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
     - _EMISSION_COLOR: {r: 0, g: 0, b: 0, a: 0}
