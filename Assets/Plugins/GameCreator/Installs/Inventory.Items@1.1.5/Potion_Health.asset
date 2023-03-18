@@ -154,6 +154,7 @@ MonoBehaviour:
         m_Character:
           m_Property:
             rid: 909410723659776031
+        m_Type: 0
         m_Prop:
           m_Property:
             rid: 909410723659776030
@@ -181,6 +182,7 @@ MonoBehaviour:
         m_Character:
           m_Property:
             rid: 909410723659776051
+        m_Type: 0
         m_Prop:
           m_Property:
             rid: 909410723659776034
@@ -275,7 +277,11 @@ MonoBehaviour:
     - rid: 2531411309620625455
       type: {class: GetLocationSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Position: 1
-        m_Rotation: 1
+        m_Position:
+          m_IsEnabled: 0
+          m_Value: {x: 0, y: 0, z: 0}
+        m_Rotation:
+          m_IsEnabled: 0
+          m_Value: {x: 0, y: 0, z: 0}
     - rid: 2531411309620625456
       type: {class: GetGameObjectTarget, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}

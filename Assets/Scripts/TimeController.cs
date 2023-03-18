@@ -3,14 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using GameCreator;
 
 
 public class TimeController : MonoBehaviour
 {
     [SerializeField]
-    private float timeMultiplier;
+    private float timeMultiplierBase;
 
     [SerializeField]
+    private GameObject Asleep;
+
+    [SerializeField] 
     private float startHour;
 
     [SerializeField]
@@ -48,18 +52,33 @@ public class TimeController : MonoBehaviour
 
     private TimeSpan sunriseTime;
     private TimeSpan sunsetTime;
+    private float timeMultiplier;
+    private bool sleeping;
 
     // Start is called before the first frame update
     void Start()
     {
+        sleeping = Asleep.activeSelf;
         currentTime = DateTime.Now.Date + TimeSpan.FromHours(startHour);
         sunriseTime = TimeSpan.FromHours(sunriseHour);
         sunsetTime = TimeSpan.FromHours(sunsetHour);
+        timeMultiplier = timeMultiplierBase;
     }
 
     // Update is called once per frame
     void Update()
     {
+        sleeping = Asleep.activeSelf;
+
+        if(sleeping)
+        {
+            timeMultiplier = timeMultiplierBase * 500;
+        }
+
+        else
+        {
+            timeMultiplier = timeMultiplierBase;
+        }
         UpdateTimeOfDay();
         RotateSun();
         UpdateLightSettings();

@@ -83,6 +83,7 @@ MonoBehaviour:
     m_InstructionsOnUse:
       m_Instructions:
         m_Instructions:
+        - rid: 5930172391608549641
         - rid: 5930172027186447240
         - rid: 5930172027186447318
         - rid: 5930172027186447252
@@ -125,7 +126,7 @@ MonoBehaviour:
     - rid: 5930172027186447240
       type: {class: InstructionGameObjectInstantiate, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data:
-        m_IsExpanded: 1
+        m_IsExpanded: 0
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_GameObject:
@@ -180,7 +181,7 @@ MonoBehaviour:
     - rid: 5930172027186447252
       type: {class: InstructionGameObjectInstantiate, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data:
-        m_IsExpanded: 1
+        m_IsExpanded: 0
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_GameObject:
@@ -217,7 +218,7 @@ MonoBehaviour:
     - rid: 5930172027186447258
       type: {class: InstructionBooleanSetBool, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data:
-        m_IsExpanded: 1
+        m_IsExpanded: 0
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Set:
@@ -253,7 +254,7 @@ MonoBehaviour:
     - rid: 5930172027186447318
       type: {class: InstructionCommonTimeWait, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data:
-        m_IsExpanded: 1
+        m_IsExpanded: 0
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Seconds:
@@ -265,3 +266,29 @@ MonoBehaviour:
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: 2
+    - rid: 5930172391608549641
+      type: {class: InstructionBooleanSetBool, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Set:
+          m_Property:
+            rid: 5930172391608549642
+        m_From:
+          m_Property:
+            rid: 5930172391608549643
+    - rid: 5930172391608549642
+      type: {class: SetBoolGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: boolean
+          m_Variable: {fileID: 11400000, guid: 419b4bb314b5e2a48be5550fd71d5c24, type: 2}
+          m_Name:
+            m_String: SpellCanBeUsed
+            m_ID: -630851549
+    - rid: 5930172391608549643
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1

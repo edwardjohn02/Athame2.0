@@ -1,0 +1,261 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e25e7ff5b3ce840cd941cc265f0dfce0, type: 3}
+  m_Name: ConjureWater
+  m_EditorClassIdentifier: 
+  m_ID:
+    m_SerializedID:
+      m_String: 21117b19-0869-4b06-8a8a-404b05f9e9c6
+  m_Parent: {fileID: 11400000, guid: c103be3ee74a3ff49aa8beca2a0d270c, type: 2}
+  m_Prefab: {fileID: 0}
+  m_CanDrop:
+    m_IsEnabled: 0
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 4294967295
+  m_Info:
+    m_Name:
+      m_Property:
+        rid: 5930172390716736230
+    m_Description:
+      m_Property:
+        rid: 5930172390716736231
+    m_Sprite:
+      m_Property:
+        rid: 5930172390716736232
+    m_Color:
+      m_Property:
+        rid: 5930172390716736233
+  m_Shape:
+    m_Width: 1
+    m_Height: 1
+    m_Weight: 0
+    m_MaxStack: 1
+  m_Price:
+    m_Currency: {fileID: 11400000, guid: f161451dbe0f54fedbaaa28716337778, type: 2}
+    m_Value: 100
+    m_CanBuyFromMerchant: 0
+    m_CanSellToMerchant: 0
+  m_Properties:
+    m_InheritFromParent: 1
+    m_List:
+    - m_IsExpanded: 0
+      m_Breakpoint: 0
+      m_IsEnabled: 0
+      m_PropertyID:
+        m_String: Reagent
+      m_Visible: 0
+      m_Icon: {fileID: 0}
+      m_Color: {r: 0, g: 0, b: 0, a: 0}
+      m_Number: 1
+      m_Text:
+        m_Property:
+          rid: 5930172390716736252
+    m_Overrides:
+      m_Keys:
+      - m_String: ManaCost
+      - m_String: Duration
+      m_Values:
+      - m_Override: 1
+        m_Number: 2
+      - m_Override: 0
+        m_Number: 0
+  m_Sockets:
+    m_InheritFromParent: 1
+    m_List: []
+    m_PrefabSocket: {fileID: 0}
+  m_Equip:
+    m_IsEquippable: 1
+    m_Prefab: {fileID: 0}
+    m_ConditionsEquip:
+      m_Conditions:
+        m_Conditions: []
+    m_InstructionsOnEquip:
+      m_Instructions:
+        m_Instructions: []
+    m_InstructionsOnUnequip:
+      m_Instructions:
+        m_Instructions: []
+    m_ExecuteFromParent: 1
+  m_Usage:
+    m_CanUse: 1
+    m_ConsumeWhenUse: 0
+    m_ConditionsCanUse:
+      m_Conditions:
+        m_Conditions:
+        - rid: 5930172390716736254
+    m_InstructionsOnUse:
+      m_Instructions:
+        m_Instructions:
+        - rid: 5930172391608549484
+        - rid: 5930172390716736258
+        - rid: 5930172390716736261
+        - rid: 5930172391608549386
+    m_ExecuteFromParent: 0
+  m_Crafting:
+    m_Ingredients: []
+    m_CanCraft: 0
+    m_ConditionsCraft:
+      m_Conditions:
+        m_Conditions: []
+    m_InstructionsOnCraft:
+      m_Instructions:
+        m_Instructions: []
+    m_CanDismantle: 0
+    m_ConditionsDismantle:
+      m_Conditions:
+        m_Conditions: []
+    m_InstructionsOnDismantle:
+      m_Instructions:
+        m_Instructions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 5930172390716736230
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: Conjure Water
+    - rid: 5930172390716736231
+      type: {class: GetStringTextArea, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Text:
+          m_Text: Conjure a small amount of water and capture it in a vial.
+    - rid: 5930172390716736232
+      type: {class: GetSpriteInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Sprite: {fileID: 21300000, guid: 3a481bc5b3972b54ab4918d5226622af, type: 3}
+    - rid: 5930172390716736233
+      type: {class: GetColorColorsWhite, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5930172390716736252
+      type: {class: GetStringItemName, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Item:
+          m_Property:
+            rid: 5930172390716736253
+    - rid: 5930172390716736253
+      type: {class: GetItemInstance, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Item: {fileID: 11400000, guid: 749a7c732872dda428c89714d99a9ced, type: 2}
+    - rid: 5930172390716736254
+      type: {class: ConditionInventoryHasItem, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Sign: 1
+        m_Item:
+          m_Property:
+            rid: 5930172390716736255
+        m_Amount:
+          m_Property:
+            rid: 5930172390716736256
+        m_Bag:
+          m_Property:
+            rid: 5930172390716736257
+    - rid: 5930172390716736255
+      type: {class: GetItemInstance, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Item: {fileID: 11400000, guid: 749a7c732872dda428c89714d99a9ced, type: 2}
+    - rid: 5930172390716736256
+      type: {class: GetDecimalInteger, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+    - rid: 5930172390716736257
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5930172390716736258
+      type: {class: InstructionInventoryRemoveItem, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Item:
+          m_Property:
+            rid: 5930172390716736259
+        m_Bag:
+          m_Property:
+            rid: 5930172390716736260
+    - rid: 5930172390716736259
+      type: {class: GetItemInstance, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Item: {fileID: 11400000, guid: 749a7c732872dda428c89714d99a9ced, type: 2}
+    - rid: 5930172390716736260
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5930172390716736261
+      type: {class: InstructionInventoryAddItem, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Item:
+          m_Property:
+            rid: 5930172390716736262
+        m_Bag:
+          m_Property:
+            rid: 5930172390716736263
+    - rid: 5930172390716736262
+      type: {class: GetItemInstance, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Item: {fileID: 11400000, guid: cb316e371f201ab4286b331df28019e4, type: 2}
+    - rid: 5930172390716736263
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 5930172391608549386
+      type: {class: InstructionBooleanSetBool, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Set:
+          m_Property:
+            rid: 5930172391608549389
+        m_From:
+          m_Property:
+            rid: 5930172391608549388
+    - rid: 5930172391608549388
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 0
+    - rid: 5930172391608549389
+      type: {class: SetBoolGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: boolean
+          m_Variable: {fileID: 11400000, guid: 419b4bb314b5e2a48be5550fd71d5c24, type: 2}
+          m_Name:
+            m_String: Casting
+            m_ID: 514229196
+    - rid: 5930172391608549484
+      type: {class: InstructionBooleanSetBool, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Set:
+          m_Property:
+            rid: 5930172391608549487
+        m_From:
+          m_Property:
+            rid: 5930172391608549486
+    - rid: 5930172391608549486
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+    - rid: 5930172391608549487
+      type: {class: SetBoolGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: boolean
+          m_Variable: {fileID: 11400000, guid: 419b4bb314b5e2a48be5550fd71d5c24, type: 2}
+          m_Name:
+            m_String: SpellCanBeUsed
+            m_ID: -630851549

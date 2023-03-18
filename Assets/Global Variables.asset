@@ -30,6 +30,8 @@ MonoBehaviour:
     - rid: 5930172124141977684
     - rid: 5930172190540169291
     - rid: 5930172232133509215
+    - rid: 5930172299840061840
+    - rid: 5930172391608549488
   references:
     version: 2
     RefIds:
@@ -163,6 +165,40 @@ MonoBehaviour:
         m_Name:
           m_String: ActiveDuration
     - rid: 5930172232133509217
+      type: {class: ValueBool, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value: 0
+    - rid: 5930172299840061840
+      type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value:
+          rid: 5930172299840061842
+        m_Name:
+          m_String: Sleeping
+    - rid: 5930172299840061842
+      type: {class: ValueBool, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value: 0
+    - rid: 5930172391608549488
+      type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value:
+          rid: 5930172391608549490
+        m_Name:
+          m_String: SpellCanBeUsed
+    - rid: 5930172391608549490
       type: {class: ValueBool, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
       data:
         m_IsExpanded: 1

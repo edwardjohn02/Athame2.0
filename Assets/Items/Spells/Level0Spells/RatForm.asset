@@ -85,6 +85,7 @@ MonoBehaviour:
     m_InstructionsOnUse:
       m_Instructions:
         m_Instructions:
+        - rid: 5930172391608549644
         - rid: 5930172191567249650
         - rid: 5930172191567249652
         - rid: 5930172191567249654
@@ -476,3 +477,29 @@ MonoBehaviour:
           m_Name:
             m_String: ActiveDuration
             m_ID: 1162463021
+    - rid: 5930172391608549644
+      type: {class: InstructionBooleanSetBool, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Set:
+          m_Property:
+            rid: 5930172391608549645
+        m_From:
+          m_Property:
+            rid: 5930172391608549646
+    - rid: 5930172391608549645
+      type: {class: SetBoolGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: boolean
+          m_Variable: {fileID: 11400000, guid: 419b4bb314b5e2a48be5550fd71d5c24, type: 2}
+          m_Name:
+            m_String: SpellCanBeUsed
+            m_ID: -630851549
+    - rid: 5930172391608549646
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1

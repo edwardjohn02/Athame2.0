@@ -85,6 +85,7 @@ MonoBehaviour:
     m_InstructionsOnUse:
       m_Instructions:
         m_Instructions:
+        - rid: 5930172391608549638
         - rid: 5930172232518861799
         - rid: 5930172189515972616
         - rid: 5930172189515972637
@@ -315,3 +316,29 @@ MonoBehaviour:
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: 0.5
+    - rid: 5930172391608549638
+      type: {class: InstructionBooleanSetBool, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Set:
+          m_Property:
+            rid: 5930172391608549639
+        m_From:
+          m_Property:
+            rid: 5930172391608549640
+    - rid: 5930172391608549639
+      type: {class: SetBoolGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: boolean
+          m_Variable: {fileID: 11400000, guid: 419b4bb314b5e2a48be5550fd71d5c24, type: 2}
+          m_Name:
+            m_String: SpellCanBeUsed
+            m_ID: -630851549
+    - rid: 5930172391608549640
+      type: {class: GetBoolValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
