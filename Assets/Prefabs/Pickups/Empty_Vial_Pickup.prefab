@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Target:
     m_Property:
       rid: 5930172303457648972
-  m_Radius: 3
+  m_Radius: 2
   m_Offset: {x: 0, y: 0, z: 0}
   m_Spots:
     m_Spots:
@@ -179,13 +179,13 @@ MonoBehaviour:
     - rid: 5930172303457648974
       type: {class: SpotTooltipTextFocus, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data:
-        m_IsExpanded: 0
+        m_IsExpanded: 1
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Text:
           m_Property:
             rid: 5930172303457648975
-        m_Offset: {x: 0, y: 1.5, z: 0}
+        m_Offset: {x: 0, y: 0, z: 0}
         m_Space: 1
         m_Prefab: {fileID: 4653243572743772486, guid: 35b3ff7064ffe4ab18afd1599b951caa, type: 3}
     - rid: 5930172303457648975

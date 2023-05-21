@@ -17,7 +17,8 @@ namespace GameCreator.Runtime.Inventory.UnityUI
         ISelectHandler
     {
         private static readonly CultureInfo CULTURE = CultureInfo.InvariantCulture;
-        private const string FORMAT = "+#;-#;0";
+        //private const string FORMAT = "+#;-#;0";
+        public string FORMAT = "+#;-#;0";
         
         public static event Action<PropertyUI> EventHoverEnter;
         public static event Action<PropertyUI> EventHoverExit;
@@ -44,6 +45,8 @@ namespace GameCreator.Runtime.Inventory.UnityUI
         // MEMBERS: -------------------------------------------------------------------------------
 
         [NonSerialized] private RuntimeProperty m_RuntimeProperty;
+
+        
 
         // PRIVATE CALLBACKS: ---------------------------------------------------------------------
 
@@ -73,6 +76,13 @@ namespace GameCreator.Runtime.Inventory.UnityUI
         public void RefreshUI(Bag bag, RuntimeItem runtimeItem, RuntimeProperty runtimeProperty)
         {
             this.m_RuntimeProperty = runtimeProperty;
+            
+            //Teddy's Changes
+            if(true){
+                FORMAT = "#;#;0";
+            }
+
+            //End Teddy's Changes   
 
             this.m_NumberValue.Text = runtimeProperty
                 .GetTotalNumber(runtimeItem)

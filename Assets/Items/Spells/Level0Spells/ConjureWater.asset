@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Properties:
     m_InheritFromParent: 1
     m_List:
-    - m_IsExpanded: 0
+    - m_IsExpanded: 1
       m_Breakpoint: 0
       m_IsEnabled: 0
       m_PropertyID:

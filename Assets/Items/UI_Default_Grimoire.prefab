@@ -1040,7 +1040,7 @@ GameObject:
   - component: {fileID: 2289631117341381416}
   - component: {fileID: 325840157944180077}
   m_Layer: 0
-  m_Name: TabEquippables
+  m_Name: TabLvl1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1119,7 +1119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BagListUI: {fileID: 5258365318893303900}
-  m_FilterByParent: {fileID: 11400000, guid: 038313ce921944a8a91c675783784a8d, type: 2}
+  m_FilterByParent: {fileID: 11400000, guid: 76d062fd0c57e7948b4df2e54f8569bb, type: 2}
   m_ActiveFilter: {fileID: 6292315198973580343}
 --- !u!1 &1689254243403747035
 GameObject:
@@ -1187,7 +1187,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 580d0604bcdd44d27874e7d99dbdfe26, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b22156af64babe4f9bff6441c5b942f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1748,7 +1748,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b92c5e29bfb78432cb26dceebd38525d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7972dd97521bb1c44ba8e3774391b996, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1862,7 +1862,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 090d306847178494ba53fb33ad0a371d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1c82fa18a9230df4f9a0aa981fe3a341, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2942,7 +2942,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b451877fccf4d4bb8944afcb356506c5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 12cf538c5ea284a4f9c2bb35ce1f7d89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3018,7 +3018,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b451877fccf4d4bb8944afcb356506c5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 12cf538c5ea284a4f9c2bb35ce1f7d89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3442,7 +3442,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b92c5e29bfb78432cb26dceebd38525d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7972dd97521bb1c44ba8e3774391b996, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3787,6 +3787,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 10
   m_TargetDisplay: 0
@@ -3888,6 +3889,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5782538335739239960
 GameObject:
   m_ObjectHideFlags: 0
@@ -4177,7 +4179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BagListUI: {fileID: 5258365318893303900}
-  m_FilterByParent: {fileID: 11400000, guid: bcb31b23ed05817498d4b8864e6d8aca, type: 2}
+  m_FilterByParent: {fileID: 11400000, guid: 90d7c4bb1226a8249bf0e046bb64f65a, type: 2}
   m_ActiveFilter: {fileID: 6866364144168251877}
 --- !u!1 &6698660216187022707
 GameObject:
@@ -4396,7 +4398,7 @@ GameObject:
   - component: {fileID: 8987206177108600814}
   - component: {fileID: 1422045853098809268}
   m_Layer: 0
-  m_Name: TabIngredients
+  m_Name: TabLvl3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4475,7 +4477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BagListUI: {fileID: 5258365318893303900}
-  m_FilterByParent: {fileID: 11400000, guid: 959c67260509e4c80899c48bd0a8ed77, type: 2}
+  m_FilterByParent: {fileID: 11400000, guid: a1f24bf635c4d884c929e424bc570bb8, type: 2}
   m_ActiveFilter: {fileID: 5554459607184181804}
 --- !u!1 &7508209088189326063
 GameObject:
@@ -4556,7 +4558,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Properties
+  m_Text: Properties and Reagents
 --- !u!1 &7638697572230883395
 GameObject:
   m_ObjectHideFlags: 0
@@ -5001,7 +5003,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 580d0604bcdd44d27874e7d99dbdfe26, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b22156af64babe4f9bff6441c5b942f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5389,7 +5391,7 @@ GameObject:
   - component: {fileID: 139377696805248920}
   - component: {fileID: 5625869133700220977}
   m_Layer: 0
-  m_Name: TabRunes
+  m_Name: TabLvl2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5468,7 +5470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BagListUI: {fileID: 5258365318893303900}
-  m_FilterByParent: {fileID: 11400000, guid: 722686d0d83334c769b8bb4e775a8036, type: 2}
+  m_FilterByParent: {fileID: 11400000, guid: d0c0c8e4066ca7e44ab5970c7dcface4, type: 2}
   m_ActiveFilter: {fileID: 644470307072677117}
 --- !u!1 &8890601807905562230
 GameObject:
@@ -5592,7 +5594,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 7334535664687181068}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.84210527
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5663,7 +5665,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 090d306847178494ba53fb33ad0a371d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1c82fa18a9230df4f9a0aa981fe3a341, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5846,7 +5848,7 @@ GameObject:
   - component: {fileID: 3967504979546527772}
   - component: {fileID: 8052439529120578305}
   m_Layer: 0
-  m_Name: TabConsumables
+  m_Name: TabLvl0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5925,5 +5927,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BagListUI: {fileID: 5258365318893303900}
-  m_FilterByParent: {fileID: 11400000, guid: 665d41b4092f3489cb6e5864907aec6d, type: 2}
+  m_FilterByParent: {fileID: 11400000, guid: c103be3ee74a3ff49aa8beca2a0d270c, type: 2}
   m_ActiveFilter: {fileID: 1612902652254211331}
